@@ -16,6 +16,13 @@
    <div align="center">
      Build this project step by step with the detailed tutorial by <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube.
     </div>
+
+    <div align="center">
+    Live URL: https://expo.dev/accounts/filsammy/projects/mobile_movie_app/builds/07c7eb46-e605-42e5-8bd9-14290e1ebc62
+    </div>
+
+    ![Scan to open app](assets/images/qr.png)
+
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
