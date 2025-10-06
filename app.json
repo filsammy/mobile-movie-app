@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.filsammy.iosmovieapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +18,8 @@
         "foregroundImage": "./assets/images/logo.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.filsammy.androidmovieapp"
     },
     "web": {
       "output": "static",
@@ -41,6 +43,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e428ed67-c375-425e-992a-c6285e047e49"
+      }
     }
   }
 }

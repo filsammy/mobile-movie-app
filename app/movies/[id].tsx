@@ -5,6 +5,7 @@ import { router, useLocalSearchParams } from "expo-router";
 import React from "react";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import SaveButton from "@/components/SaveButton";
 
 interface MovieInfoProps {
   label: string;
@@ -26,9 +27,30 @@ const MovieDetails = () => {
   const { data: movie, loading } = useFetch(() =>
     fetchMovieDetails(id as string)
   );
+
+  // Convert MovieDetails to Movie type for SaveButton
+  const movieForSave: Movie | null = movie
+    ? {
+        id: movie.id,
+        title: movie.title,
+        adult: movie.adult,
+        backdrop_path: movie.backdrop_path || "",
+        genre_ids: movie.genres.map((g) => g.id),
+        original_language: movie.original_language,
+        original_title: movie.original_title,
+        overview: movie.overview || "",
+        popularity: movie.popularity,
+        poster_path: movie.poster_path || "",
+        release_date: movie.release_date,
+        video: movie.video,
+        vote_average: movie.vote_average,
+        vote_count: movie.vote_count,
+      }
+    : null;
+
   return (
     <View className="bg-primary flex-1">
-      <ScrollView contentContainerStyle={{ paddingBottom: 80 }}>
+      <ScrollView contentContainerStyle={{ paddingBottom: 120 }}>
         <View>
           <Image
             source={{
@@ -69,7 +91,7 @@ const MovieDetails = () => {
             />
             <MovieInfo
               label="Revenue"
-              value={`$${Math.round(movie?.revenue) / 1_000_000}`}
+              value={`$${Math.round(movie?.revenue ?? 0) / 1_000_000}`}
             />
           </View>
 
@@ -83,6 +105,12 @@ const MovieDetails = () => {
         </View>
       </ScrollView>
 
+      {movieForSave && (
+        <View className="absolute top-14 right-5 z-50">
+          <SaveButton movie={movieForSave} size={8} />
+        </View>
+      )}
+
       <TouchableOpacity
         style={{ bottom: insets.bottom }}
         className="absolute bottom-5 left-0 right-0 mx-5 bg-darkAccent rounded-lg py-3.5 flex flex-row items-center justify-center z-50"
@@ -93,7 +121,7 @@ const MovieDetails = () => {
           className="size-5 mr-1 mt-0.5 rotate-180"
           tintColor="#fff"
         />
-        <Text className="text-white font0-semibold text-base">Go back</Text>
+        <Text className="text-white font-semibold text-base">Go back</Text>
       </TouchableOpacity>
     </View>
   );
