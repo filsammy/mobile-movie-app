@@ -1,29 +1,29 @@
-<div align="center">
-  <br />
-    <h1>MovieFlix - Mobile Movie App</h1>
-  <br />
+<h1 align="center">MovieFlix - Mobile Movie App</h1>
 
-  <div>
-    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="React Native" />
-    <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="Expo" />
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=F02E65" alt="Appwrite" />
-  </div>
+<p align="center">
+  <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="Expo" />
+  <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=F02E65" alt="Appwrite" />
+</p>
 
-  <h3 align="center">A Movie Finding App with Extensive Search</h3>
+<h3 align="center">A Movie Finding App with Extensive Search</h3>
 
-   <div align="center">
-     Build this project step by step with the detailed tutorial by <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube.
-    </div>
+<p align="center">
+  Build this project step by step with the detailed tutorial by 
+  <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> on YouTube.
+</p>
 
-    <div align="center">
-    Live URL: https://expo.dev/accounts/filsammy/projects/mobile_movie_app/builds/07c7eb46-e605-42e5-8bd9-14290e1ebc62
-    </div>
+<p align="center">
+  <b>Live URL:</b> <a href="https://expo.dev/accounts/filsammy/projects/mobile_movie_app/builds/07c7eb46-e605-42e5-8bd9-14290e1ebc62">Open in Expo Go</a>
+</p>
 
-    ![Scan to open app](assets/images/qr.png)
+<p align="center">
+  <img src="assets/images/qr.png" alt="Scan to open app" width="200" />
+</p>
 
-</div>
+---
 
 ## 📋 <a name="table">Table of Contents</a>
 
