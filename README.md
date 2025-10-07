@@ -20,7 +20,6 @@
 </p>
 
 <p align="center">
-  <b>📲 Open in Expo Go:</b><br/>
   <img src="assets/images/qr.png" alt="Scan to open app" width="200" />
 </p>
 
