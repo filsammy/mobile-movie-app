@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=F02E65" alt="Appwrite" />
 </p>
 
-<h3 align="center">A Movie Finding App with Extensive Search</h3>
+<h3 align="center">A Movie Finding App with Extensive Search and Personal Collections</h3>
 
 <p align="center">
   Build this project step by step with the detailed tutorial by 
@@ -16,10 +16,11 @@
 </p>
 
 <p align="center">
-  <b>Live URL:</b> <a href="https://expo.dev/accounts/filsammy/projects/mobile_movie_app/builds/07c7eb46-e605-42e5-8bd9-14290e1ebc62">Open in Expo Go</a>
+  <b>📱 Android APK:</b> <a href="https://expo.dev/accounts/filsammy/projects/mobile_movie_app/builds/07c7eb46-e605-42e5-8bd9-14290e1ebc62">Download & Install</a>
 </p>
 
 <p align="center">
+  <b>📲 Open in Expo Go:</b><br/>
   <img src="assets/images/qr.png" alt="Scan to open app" width="200" />
 </p>
 
@@ -47,7 +48,7 @@ This repository contains the code corresponding to an in-depth tutorial availabl
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics. The app leverages modern UI/UX principles for a responsive and visually appealing interface, ensuring real-world scalability and performance.
+Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics. The app features personal movie collections, user statistics tracking, and a comprehensive profile system. Leveraging modern UI/UX principles for a responsive and visually appealing interface, ensuring real-world scalability and performance.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -59,21 +60,29 @@ Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creat
 
 - **[TypeScript](https://www.typescriptlang.org/)** is a statically-typed superset of JavaScript providing type annotations, interfaces, enums, generics, and enhanced tooling. It improves error detection, code quality, and scalability—ideal for robust, maintainable projects.
 
-- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework enabling rapid UI design via low-level classes. In React Native/Expo, it’s commonly used with NativeWind to apply Tailwind-style utilities to mobile components.
+- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework enabling rapid UI design via low-level classes. In React Native/Expo, it's commonly used with NativeWind to apply Tailwind-style utilities to mobile components.
 
 - **[NativeWind](https://www.nativewind.dev/)** brings Tailwind CSS to React Native and Expo, allowing you to style mobile components using utility-first classes for fast, consistent, and responsive UI design.
 
 ## <a name="features">🔋 Features</a>
 
-### Features of the Mobile Movie AppProject
+### Features of the Mobile Movie App Project
 
-👉 **Real-time data**: Fetching and displaying real-time movie data
+👉 **Real-time data**: Fetching and displaying real-time movie data from TMDB API
 
-👉 **Home Page**: Featured and discover movies
+👉 **Home Page**: Featured and discover movies with curated collections
 
-👉 **Search Page**: Search for your favorite movies
+👉 **Search Page**: Advanced search functionality for your favorite movies
 
-👉 **Popularity algorithm**: Track user searches to display the most popular movies
+👉 **Saved Movies Tab**: Save and manage your personal movie collection
+
+👉 **Profile Tab**: View your activity statistics and most searched movies
+
+👉 **User Statistics**: Track saved movies count, search history, and total interactions
+
+👉 **Popularity Algorithm**: Track user searches to display the most popular movies
+
+👉 **Android Build**: Production-ready APK available for direct installation
 
 and many more, including code architecture and reusability.
 
@@ -120,6 +129,8 @@ EXPO_PUBLIC_APPWRITE_PROJECT_ID=
 EXPO_PUBLIC_APPWRITE_DATABASE_ID=
 
 EXPO_PUBLIC_APPWRITE_COLLECTION_ID=
+
+EXPO_PUBLIC_APPWRITE_SAVED_COLLECTION_ID=
 ```
 
 Replace the placeholder values with your actual TMDB API key, Appwrite project ID, Database ID, and Collection ID. You can obtain these credentials by signing up on the [Appwrite](https://jsm.dev/rn25-appwrite), [TMDB](https://www.themoviedb.org/login).
@@ -132,7 +143,17 @@ npx expo start
 
 ```
 
-Open your ExpoGO app on your phone and scan the QR code to view the project.
+Open your Expo Go app on your phone and scan the QR code to view the project.
+
+**Building for Android**
+
+To create a production build for Android:
+
+```bash
+eas build -p android --profile preview
+```
+
+The build will be available on your Expo dashboard and can be downloaded as an APK for direct installation.
 
 ## <a name="snippets">🕸️ Snippets</a>
 
@@ -266,3 +287,23 @@ interface TrendingCardProps {
 ## <a name="links">🔗 Assets</a>
 
 Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/rn25-movie)**.
+
+---
+
+## 📱 Installation (Android)
+
+### Option 1: Direct APK Installation (Android)
+
+Download the APK from the [builds page](https://expo.dev/accounts/filsammy/projects/mobile_movie_app/builds/07c7eb46-e605-42e5-8bd9-14290e1ebc62) and install directly on your Android device.
+
+### Option 2: Expo Go (Android)
+
+1. Scan the QR code above with your android device's camera
+2. The app will redirect you to my expo.dev account
+3. Click the install button and open the app
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/filsammy">filsammy</a>
+</p>
